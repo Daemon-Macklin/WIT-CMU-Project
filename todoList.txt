@@ -1,0 +1,6 @@
+IOT Project to-do list
+
+1)Learn how pi camera works
+2)Research/Code image processing 
+3)set up mongodb collection
+4)Make web app
