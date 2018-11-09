@@ -11,7 +11,7 @@ def start():
 
     #Starting new Wia class and setting decivce's secret access token
     wia = Wia()
-    wia.access_token = "d_sk_oBF5nGQeQk8VvOZvqXzMsUSr"
+    wia.access_token = ""
 
     #Infinte Loop taking images and uploading them to WIA flow
     while(1):
