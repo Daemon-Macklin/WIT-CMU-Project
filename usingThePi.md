@@ -36,7 +36,7 @@ In the platescanner.py script you will need to add the device secret key. On the
 device secret key so that the code looks like this:
 
 ```python
-wia.access_token = "d_sk_74u2KZL9LXZldmpxHaHraGTr"
+wia.access_token = "SECRET_ACCESS_TOKEN"
 ```
 
 #### Step 4: Setting up the camera
