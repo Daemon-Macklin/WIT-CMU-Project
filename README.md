@@ -8,9 +8,9 @@ A collaboration by WIT and CMU
 For our project we are using Joseph's idea to do an automatic license plate recognition system.
 
 ## Raspberry pi
-We are using a [Raspberry pi](https://www.raspberrypi.org/) with the picamera module to take the images. The images are taken automatically by using
-a [ST_00081](http://simplytronics.com/products/ST-00081#Technical_Details) PIR sensor that when triggered by movement will take an image.
-This image is then published to a flow on Wia.io
+We are using a [Raspberry pi](https://www.raspberrypi.org/) with the [PiCamera](https://picamera.readthedocs.io/en/release-1.13/) module to take the images. The images are taken automatically by using
+a [ST_00081](http://simplytronics.com/products/ST-00081#Technical_Details) PIR sensor that when triggered by movement will cause the 
+PiCamera to  take an image.This image is then published to a flow on Wia.io
 
 ## Wia.io
 [Wia.io](https://www.wia.io/) is an iot platform that allows users to connect devices, upload data and do all sorts of things.
