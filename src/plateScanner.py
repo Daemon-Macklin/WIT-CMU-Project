@@ -2,41 +2,43 @@
 from wia import Wia
 from picamera import PiCamera
 from picamera import PiResolution
-import time
+from time import sleep
 import uuid
 
 
 #Method to continusly upload captured images to wia 
 def start():
-    
+    print("Hello....")
     #Starting new Wia class and setting decivce's secret access token
     wia = Wia()
-    wia.access_token = ""
+    print("Hello....")
+    wia.access_token = "d_sk_74u2KZL9LXZldmpxHaHraGTr"
+    print("Hello....")
     #Infinte Loop taking images and uploading them to WIA flow
-    ##while(1):
+    count = 0
+    while(count < 1):
 
         #Calling image
-    image = capture()
+        image = capture()
 
         #Check is the image is null
-    if image is not None:
+        if image is not None:
 
             #If Image is not null try to upload it to WIA flow by
             #publishing it to event named image
             #If the publish fails print the error
-        try:
-            wia.Event.publish(name = "image",file = image)
-            print("Image published")
-        except Exception as e:
-            print(e)
-    else:
+            try:
+                wia.Event.publish(name = "image",file = image)
+            except Exception as e:
+                print(e)
+        else:
 
-        #If Image is null print error mesage 
-        print("Error Capturing Image")
+            #If Image is null print error mesage 
+            print("Error Capturing Image")
 
         #Sleep 10 seconds before taking another image
-
-        
+        ##time.sleep(10)
+        count+=1
 
 def capture():
 
@@ -66,5 +68,5 @@ def capture():
 
 
 #Starting program
-if __name__ == '__main__':
-    start()
+##if __name__ == '__main__':
+##    start()
