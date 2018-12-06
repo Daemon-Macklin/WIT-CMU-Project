@@ -8,12 +8,11 @@ import uuid
 
 #Method to continusly upload captured images to wia 
 def start():
-    print("Hello....")
     #Starting new Wia class and setting decivce's secret access token
     wia = Wia()
-    print("Hello....")
-    wia.access_token = "d_sk_74u2KZL9LXZldmpxHaHraGTr"
-    print("Hello....")
+    wia.access_token = ""
+
+ 
     #Infinte Loop taking images and uploading them to WIA flow
     count = 0
     while(count < 1):
