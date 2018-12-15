@@ -10,7 +10,7 @@ While(1):
 
     ##Wia Device information
     wia = Wia()
-    wia.access_token = "d_sk_Bi6s9KuRIoNg0O2AiPqBOnMj"
+    wia.access_token = ""
 
     ##Publish Image to WIA
     wia.Event.publish(name = "image",file = open('/home/pi/image.jpg'))
